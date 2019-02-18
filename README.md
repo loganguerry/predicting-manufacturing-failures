@@ -1,10 +1,12 @@
 ## Predicting Product Failure within Warranty Period for Hunter-Douglas
-This repository is primarily focused on data cleansing, preprossecing and model building for predicting product failures at Hunter-Douglas. Below can be found:
-  * R script for data cleansing (done)
-  * R script for preprossesing (working)
-  * R script for various predictive models
-    * LGBM through SciKit.Learn - Python (working)
-    * Gradient Boosted Tree Classifier - R (working)
-    * NNet - R (working)
+This repository is a collection of scripts that explore predictive modelings for product failure for Hunter Douglas, Inc.
 
-Please hold personal copies of iterations outside of comits.
+Due to the confidential nature of the implicit data, there will be no data shared in this repo - only scripts for preprocessing, and modeling without variable names included. This repo, and the contained scripts should be taken as examples of scripting capabilities only, as the results from the contained scripts will be withheld for confidentiality reasons.
+
+#### Complete
+  * R script for data cleansing
+  
+#### Working
+  * LGBM through SciKit.Learn - Python
+  * Gradient Boosted Tree Classifier - R
+  * NNet - R
