@@ -11,8 +11,8 @@ library(rpart)
 library(caret)
 
 # import data
-setwd('~/Desktop/Spring 2019/Internship Class/Hunter-Douglas Project')
-alldata <- read.csv('HD_data.csv', na.strings = c("","NULL","NA", "<NA>"))
+setwd('#personal')
+alldata <- read.csv('#withheld', na.strings = c("","NULL","NA", "<NA>"))
 alldata <- alldata[is.na(alldata$ORIGINAL_ORDER) == FALSE,]
 
 # converting date strings to datetime format
@@ -67,20 +67,20 @@ final[final$ORIGINAL_ORDER == 230053700182 & final$SALES_ORDER_LINE == 1,]
 summary(final)
 
 # write CSV of cleaned data
-write_csv(final, "~/Desktop/HD_data_clean.csv")
+write_csv(final, "~/Desktop/data_clean.csv")
 
 # ============================================== #
 # ============================================== #
 
 # subset of data - Factory A / Roller Shades (~5% failure rate)
-subset <- final[final$ORIGINAL_PLANT == "A" & final$PRODUCT_CATEGORY == "07 Roller Shades",]
+subset <- final[final$ORIGINAL_PLANT == "A" & final$PRODUCT_CATEGORY == "#withheld",]
 
 # remove variables
 subset_trim <- subset[,-c(1,2,3,4,5,6,25,26,28)]
 head(subset_trim)
 
 # write subset CSV
-write_csv(subset_trim, "~/Desktop/HD_clean_subset.csv")
+write_csv(subset_trim, "~/Desktop/clean_subset.csv")
 
 # ============================================== #
 # ============================================== #
