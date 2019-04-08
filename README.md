@@ -5,8 +5,8 @@ Due to the confidential nature of the implicit data, there will be no data share
 
 #### Complete
   * Data cleansing and pre-processing - R
+  * Gradient Boosted Tree Classifier - R
   
 #### Working
   * LGBM through SciKit.Learn - Python
-  * Gradient Boosted Tree Classifier - R
   * NNet - R
